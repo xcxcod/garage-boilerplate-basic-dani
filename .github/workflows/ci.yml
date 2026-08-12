@@ -17,8 +17,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      # pnpm version is defined by package.json via packageManager.
+      # Do not specify another version here because pnpm/action-setup
+      # rejects conflicting version declarations.
       - uses: pnpm/action-setup@v4
-        
+
       - uses: actions/setup-node@v4
         with:
           node-version: 22
@@ -42,8 +45,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      # pnpm version is defined by package.json via packageManager.
       - uses: pnpm/action-setup@v4
-        
 
       - uses: actions/setup-node@v4
         with:
@@ -62,8 +65,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      # pnpm version is defined by package.json via packageManager.
       - uses: pnpm/action-setup@v4
-        
 
       - uses: actions/setup-node@v4
         with:
@@ -82,8 +85,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      # pnpm version is defined by package.json via packageManager.
       - uses: pnpm/action-setup@v4
-        
 
       - uses: actions/setup-node@v4
         with:

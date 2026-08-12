@@ -17,7 +17,7 @@ overrides:
   # reported by pnpm audit.
   'nanoid': '^3.3.17'
 
-  # Next.js can pull in a vulnerable PostCSS version.
+  # Next.js can pull in a vulnerable PostCSS version transitively.
   # Force PostCSS to a patched 8.x version.
   postcss: '^8.5.18'
 
