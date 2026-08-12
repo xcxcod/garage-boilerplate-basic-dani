@@ -35,10 +35,7 @@ export function CreateNoteForm() {
   }
 
   return (
-    <form
-      onSubmit={handleSubmit(onSubmit)}
-      className="space-y-3 rounded-lg border p-4"
-    >
+    <form onSubmit={handleSubmit(onSubmit)} className="space-y-3 rounded-lg border p-4">
       <div className="space-y-1.5">
         <label htmlFor="title" className="text-sm font-medium">
           Title
@@ -55,11 +52,7 @@ export function CreateNoteForm() {
         />
 
         {errors.title && (
-          <p
-            id="title-error"
-            className="text-xs text-red-500"
-            role="alert"
-          >
+          <p id="title-error" className="text-xs text-red-500" role="alert">
             {errors.title.message}
           </p>
         )}

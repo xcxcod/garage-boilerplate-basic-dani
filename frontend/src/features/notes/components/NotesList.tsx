@@ -11,17 +11,11 @@ import { EmptyState } from '@/components/shared/EmptyState'
 export function NotesList() {
   const { user, loading: authLoading } = useAuth()
 
-  const notesCollection = useMemo(
-    () => getNotesCollection(),
-    [user?.uid]
-  )
+  const notesCollection = useMemo(() => getNotesCollection(), [user?.uid])
 
   const userId = user?.uid ?? ''
 
-  const { data: notes, loading, error } = useCollection(
-    notesCollection,
-    where('uid', '==', userId)
-  )
+  const { data: notes, loading, error } = useCollection(notesCollection, where('uid', '==', userId))
 
   if (authLoading || loading) {
     return <LoadingSpinner />
