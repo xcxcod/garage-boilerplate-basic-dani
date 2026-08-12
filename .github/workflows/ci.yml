@@ -15,7 +15,7 @@ jobs:
     name: Lint & Typecheck
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       # pnpm version is defined by package.json via packageManager.
       # Do not specify another version here because pnpm/action-setup
@@ -43,7 +43,7 @@ jobs:
     name: Frontend Tests
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       # pnpm version is defined by package.json via packageManager.
       - uses: pnpm/action-setup@v4
@@ -63,7 +63,7 @@ jobs:
     name: Backend Unit Tests
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       # pnpm version is defined by package.json via packageManager.
       - uses: pnpm/action-setup@v4
@@ -83,7 +83,7 @@ jobs:
     name: Security Scan
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       # pnpm version is defined by package.json via packageManager.
       - uses: pnpm/action-setup@v4
