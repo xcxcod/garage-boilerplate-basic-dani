@@ -19,7 +19,7 @@
     "bootstrap": "node scripts/bootstrap.js",
     "validate": "node scripts/validate-placeholders.js",
     "hooks": "lefthook install",
-    "prepare": "lefthook install"
+    "prepare": "if [ -z \"$VERCEL\" ]; then lefthook install; fi"
   },
   "devDependencies": {
     "lefthook": "^1.11.13",
