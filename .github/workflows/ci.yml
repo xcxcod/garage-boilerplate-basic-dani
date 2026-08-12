@@ -22,7 +22,7 @@ jobs:
       # rejects conflicting version declarations.
       - uses: pnpm/action-setup@v4
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v7
         with:
           node-version: 22
           cache: pnpm
@@ -48,7 +48,7 @@ jobs:
       # pnpm version is defined by package.json via packageManager.
       - uses: pnpm/action-setup@v4
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v7
         with:
           node-version: 22
           cache: pnpm
@@ -68,7 +68,7 @@ jobs:
       # pnpm version is defined by package.json via packageManager.
       - uses: pnpm/action-setup@v4
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v7
         with:
           node-version: 22
           cache: pnpm
@@ -88,7 +88,7 @@ jobs:
       # pnpm version is defined by package.json via packageManager.
       - uses: pnpm/action-setup@v4
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v7
         with:
           node-version: 22
           cache: pnpm
